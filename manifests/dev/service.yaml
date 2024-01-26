@@ -2,13 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    name: assadldn-app
-  name: assadldn-app-svc
-  namespace: assadldn
+    name: labakes-app
+  name: labakes-app-svc
+  namespace: labakes
 spec:
   type: LoadBalancer
   selector:
-    app: assadldn-app
+    app: labakes-app
   ports:
   - name: http
     protocol: TCP

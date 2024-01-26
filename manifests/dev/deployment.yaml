@@ -1,15 +1,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: assadldn-app
-  namespace: assadldn
+  name: labakes-app
+  namespace: labakes
   labels:
-    app: assadldn-app
-    env: assadldn
+    app: labakes-app
+    env: labakes
 spec:
   selector:
     matchLabels:
-      app: assadldn-app
+      app: labakes-app
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -19,10 +19,10 @@ spec:
   template:
     metadata:
       labels:
-        app: assadldn-app
+        app: labakes-app
     spec:
       containers:
-      - name: assadldn-app
+      - name: labakes-app
         image: {{ IMAGE_CONTAINER }}
         #image: docker.io/aquasaemea/saemea-app:latest
         imagePullPolicy: Always
