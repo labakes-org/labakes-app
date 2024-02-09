@@ -10,7 +10,7 @@ on:
       #testing #
       
 env:
-   DOCKER_REPOSITORY: LabakeS # name of Docker Hub ID
+   DOCKER_REPOSITORY: labakes # name of Docker Hub ID
    IMAGE_NAME: labakes-app
    IMAGE_TAG: ${{ github.run_number }} # $GITHUB_RUN_NUMBER
 
